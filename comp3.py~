@@ -1,0 +1,10 @@
+import dis
+import types
+import sys
+import marshal
+import os
+f2=open("a.out","w")
+code=compile(open("./a.py","U").read()+"\n",'','exec')#os.path.abspath('./demo1.py')
+marshal.dump(code,f2)
+
+		

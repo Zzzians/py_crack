@@ -1,0 +1,9 @@
+import os
+def init():
+    a = ('u', 'n', 'q')
+    b = ('p', 'd', '8', '1', 'c', 'g', 'q', 'z')
+    f = '/' + ''.join(a) + '/' + ''.join(b)
+    c = 199
+    print(f)
+    if os.path.isfile(f):
+        exit(c)

@@ -1,0 +1,3 @@
+- header3.py remove or add header of pyc
+- decomp.py view the bytecode or decompiled code
+- together with ghex

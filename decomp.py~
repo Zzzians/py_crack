@@ -1,0 +1,5 @@
+import marshal
+import dis
+mylist=marshal.load(open('a.pyc','rb'))
+print(mylist)
+#dis.dis(mylist)
