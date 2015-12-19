@@ -18,7 +18,10 @@ if(len(sys.argv)>1):
     if(sys.argv[1]=='-f'):
         dis_func(code,sys.argv[2])
     if(sys.argv[1]=='-i'):
-         print(dis.code_info(code))
+         if(len(sys.argv)==2):
+             print(dis.code_info(code))
+         else:
+             print(dis.code_info(find_code(code,sys.argv[2])[0]))
     if(sys.argv[1]=='-l'):
          ols=dis.findlinestarts(code)
          for ol in ols:
